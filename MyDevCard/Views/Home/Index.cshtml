@@ -1,6 +1,4 @@
-﻿@{
-    ViewData["Title"] = "My.dev.page";
-}
+﻿
 
 	<div class="main-wrapper">
 		<section class="about-me-section p-3 p-lg-5 theme-bg-light">
@@ -12,7 +10,7 @@
 						<div class="tagline mb-3">برنامه نویس جونیور</div>
 						<div class="bio mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
 							طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
-							جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</a>.
+							جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
 						</div>
 						<div class="mb-4">
 							<a class="btn btn-primary mr-2 mb-3" href="http://www.atriya.com"><i
@@ -111,7 +109,9 @@
 			</div>
 		</section>
 
-		<div class="container">
+	@await Component.InvokeAsync("Project")
+	
+	<div class="container">
 			<hr>
 		</div>
 
@@ -162,3 +162,6 @@
 				</div>
 			</div>
 		</section>
+
+@await Component.InvokeAsync("Article")
+	</div> 
